@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.game-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 40px;
+}
+.game-header {
+  background-color: #444;
+  padding: 15px;
+  border-bottom: 2px solid orange;
+}
+
+.game-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.trials-display {
+  color: yellow;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+.guess-input {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 10%;
+  border: 3px solid #00aaff;
+  background-color: #111;
+  color: white;
+}
+
+.feedback-section {
+  margin-top: 20px;
+}
+
+.feedback-text {
+  color: orange;
+  font-size: 18px;
+}
+
+.score-display {
+  margin-top: 10px;
+}
+
+.score-label {
+  margin-right: 5px;
+}
+
+.score-percentage {
+  color: gold;
+  font-weight: bold;
+}
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.guess-btn, .newgame-btn {
+  padding: 18px 35px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess-btn {
+  background: linear-gradient(#2ecc71);
+  color: white;
+}
+
+.newgame-btn {
+  background: linear-gradient(#3498db);
+  color: white;
+}
+
+.guess-btn:hover, .newgame-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
