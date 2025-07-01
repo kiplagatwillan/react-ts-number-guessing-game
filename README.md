@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+Number Guessing Game 🎯
+Challenge your intuition with this sleek React-powered number guessing game! Try to uncover the secret number between 0-100 in just 10 attempts. Will you crack the code or will the numbers get the best of you?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🔥 Features
+ 
+- 10-attempt challenge with real-time counter
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Smart feedback system (Too high! Too low! Just right!)
 
-## Expanding the ESLint configuration
+- Dynamic UI states that respond to game conditions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- New game button for instant replay
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+- Input validation to prevent cheating
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Mobile-responsive design that works on any device
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+- Victory/defeat states with secret number reveal
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+# 🚀 How to Play
+
+- Start a new game by clicking "New Game"
+
+- Enter your guess (0-100) in the input field
+
+- Click "Guess" or press Enter
+
+- Receive feedback on your guess
+
+- Use the clues to refine your next guess
+
+- Win by guessing correctly within 10 attempts!
